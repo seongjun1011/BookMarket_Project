@@ -7,6 +7,7 @@ import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Map;
 
+
 @Data
 @Entity
 @Table(name = "orders")
@@ -25,6 +26,7 @@ public class Order {
 
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "order_order_id")
+    @MapKeyColumn(name = "book_id")
     private Map<String, OrderItem> orderItems = new HashMap<String, OrderItem>();
 
     private BigDecimal grandTotal;

@@ -23,10 +23,6 @@ public class CartController {
     @Autowired
     private BookService bookService;
 
-    public CartController(CartService cartService) {
-        this.cartService = cartService;
-    }
-
     @GetMapping
     public String requestCartId(HttpServletRequest request) {
         String sessionId = request.getSession().getId();

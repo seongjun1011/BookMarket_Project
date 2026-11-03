@@ -2,7 +2,6 @@ package kr.ac.kopo.psjjj.bookmarket.controller;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import jdk.jfr.Category;
 import kr.ac.kopo.psjjj.bookmarket.exception.BookIdException;
 import kr.ac.kopo.psjjj.bookmarket.exception.CategoryException;
 import kr.ac.kopo.psjjj.bookmarket.validator.UnitsInStockValidator;

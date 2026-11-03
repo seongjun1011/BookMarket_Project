@@ -18,11 +18,7 @@ public class CartItem {
         totalPrice = book.getUnitPrice();
     }
 
-    public void setBook(Book bookd) {
-        this.book = book;
-    }
-
-    public void setQuentity(int quantity) {
+    public void setQuantity(int quantity) {
         this.quantity = quantity;
         updateTotalPrice();
     }
